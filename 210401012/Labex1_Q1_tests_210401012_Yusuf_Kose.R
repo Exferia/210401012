@@ -38,3 +38,7 @@ test_that("Test: Longitude adl?? s??t??n numeric de??erlerden olu??mal??d??r.", 
 test_that("Test : idx nesnesi Global Workspace???de mevcuttur.", {
   expect_identical(exists("indx"), T)
 })
+'Q2.12'
+test_that("Test : idx nesnesinin tipi (class?????) integer???dir.", {
+  expect_identical(typeof(indx) == "integer", T)
+})
