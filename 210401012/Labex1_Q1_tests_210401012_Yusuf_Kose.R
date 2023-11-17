@@ -35,6 +35,6 @@ test_that("Test: Longitude adl?? s??t??n numeric de??erlerden olu??mal??d??r.", 
   expect_identical(is.numeric(maps$Longitude), T)
 })
 'Q2.11'
-test_that("Test : Year adl?? adl?? s??t??n numeric de??erlerden olu??mal??d??r.", {
-  expect_identical(is.numeric(maps$Year), T)
+test_that("Test : idx nesnesi Global Workspace???de mevcuttur.", {
+  expect_identical(exists("indx"), T)
 })
