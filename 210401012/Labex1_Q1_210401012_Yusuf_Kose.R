@@ -6,3 +6,6 @@ maps$Latitude <- gsub(' N','', maps$Latitude)
 'Q1.4'
 findIdx <- grepl("W", maps$Longitude)
 indx <- which(findIdx == TRUE)
+'Q1.5'
+maps$Longitude <- gsub(' W','', maps$Longitude)
+maps$Longitude <- gsub(' E','', maps$Longitude)

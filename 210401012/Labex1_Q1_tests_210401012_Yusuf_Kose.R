@@ -1,3 +1,4 @@
+library(testthat)
 'Q2.2'
 rm(list = ls())
 if(file.exists("MapsThatChangedOurWorld_StoryMap_Data.csv")){
@@ -6,6 +7,10 @@ if(file.exists("MapsThatChangedOurWorld_StoryMap_Data.csv")){
 'Q2.3'
 source("Labex1_Q1_210401012_Yusuf_Kose.R")
 'Q2.4'
-test_that("Test : MapsThatChangedOurWorld_StoryMap_Data.csv adlı dosya aktif dizinde mevcuttur", {
+test_that("Test : MapsThatChangedOurWorld_StoryMap_Data.csv adlD1 dosya aktif dizinde mevcuttur", {
   expect_identical(file.exists("MapsThatChangedOurWorld_StoryMap_Data.csv"), T)
+})
+'Q2.5'
+test_that("Test : maps adl?? de??iken Global Workspace???de mevcuttur.", {
+  expect_identical(exists("maps"), T)
 })
