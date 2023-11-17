@@ -22,3 +22,7 @@ test_that("Test: maps nesnesi bir data.frame???dir.", {
 test_that("maps adl?? data.frame???in ilk s??tunun ad?? ???City??? olmal??d??r.", {
   expect_identical(colnames(maps)[1] == "City", T)
 })
+'Q2.8'
+test_that("Test: maps adl?? data.frame???in 5. s??tunun ad??nda ???Title??? kelimesi ge??melidir.", {
+  expect_identical(grepl( "Title", colnames(maps)[5], fixed = TRUE), T)
+})
