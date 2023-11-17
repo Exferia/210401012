@@ -42,3 +42,7 @@ test_that("Test : idx nesnesi Global Workspace???de mevcuttur.", {
 test_that("Test : idx nesnesinin tipi (class?????) integer???dir.", {
   expect_identical(typeof(indx) == "integer", T)
 })
+'Q2.13'
+test_that("Test : Year adl?? adl?? s??t??n numeric de??erlerden olu??mal??d??r.", {
+  expect_identical(is.numeric(maps$Year), T)
+})
