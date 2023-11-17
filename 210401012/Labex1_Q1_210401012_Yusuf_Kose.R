@@ -18,3 +18,5 @@ maps$Latitude <- as.numeric(maps$Latitude)
 hist(maps$Year)
 'Q1.9'
 maps$Longitude[indx] <- maps$Longitude[indx] * -1
+'Q1.10'
+finalResult <- data.frame(Longitude = maps$Longitude, Latitude=maps$Latitude, Year=maps$Year)
